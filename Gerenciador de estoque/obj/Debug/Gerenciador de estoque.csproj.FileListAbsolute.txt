@@ -1,0 +1,15 @@
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\bin\Debug\Gerenciador de estoque.exe.config
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\bin\Debug\Gerenciador de estoque.exe
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\bin\Debug\Gerenciador de estoque.pdb
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\obj\Debug\Gerenciador de estoque.csproj.AssemblyReference.cache
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\obj\Debug\Gerenciador_de_estoque.Properties.Resources.resources
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\obj\Debug\Gerenciador de estoque.csproj.GenerateResource.cache
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\obj\Debug\Gerenciador de estoque.csproj.CoreCompileInputs.cache
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\obj\Debug\Gerenciador de estoque.exe
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\obj\Debug\Gerenciador de estoque.pdb
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\obj\Debug\Gerenciador_de_estoque.Login.resources
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\obj\Debug\Gerenciador_de_estoque.TelaPrincipal.resources
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\bin\Debug\Newtonsoft.Json.dll
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\bin\Debug\Newtonsoft.Json.xml
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\obj\Debug\Gerenciador de estoque.csproj.CopyComplete
+C:\Users\igorl\OneDrive\Documentos\GitHub\Gerenciador de estoque\Gerenciador de estoque\bin\Debug\FontAwesome.Sharp.dll

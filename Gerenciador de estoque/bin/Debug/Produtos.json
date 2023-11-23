@@ -1,0 +1,47 @@
+﻿[
+  {
+    "Nome": "Nome1",
+    "Id": 123456,
+    "Quantidade": 10,
+    "Preco": 49.99,
+    "PrecoDeVenda": 59.99,
+    "Categoria": {
+      "nome": "Categoria do Produto",
+      "descricao": "789"
+    },
+    "Descricao": "Descrição do Produto",
+    "Status": true,
+    "Venda": null,
+    "UltimaAlteracao": "2023-11-08T18:56:42.3461164-03:00"
+  },
+  {
+    "Nome": "Nome do Produto",
+    "Id": 123456,
+    "Quantidade": 10,
+    "Preco": 49.99,
+    "PrecoDeVenda": 59.99,
+    "Categoria": {
+      "nome": "Categoria do Produto",
+      "descricao": "789"
+    },
+    "Descricao": "Descrição do Produto",
+    "Status": true,
+    "Venda": null,
+    "UltimaAlteracao": "2023-11-08T18:56:42.3461128-03:00"
+  },
+  {
+    "Nome": "nome2",
+    "Id": 123456,
+    "Quantidade": 10,
+    "Preco": 49.99,
+    "PrecoDeVenda": 59.99,
+    "Categoria": {
+      "nome": "Categoria do Produto",
+      "descricao": "789"
+    },
+    "Descricao": "Descrição do Produto",
+    "Status": true,
+    "Venda": null,
+    "UltimaAlteracao": "2023-11-08T18:56:42.3335242-03:00"
+  }
+]
