@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 namespace Gerenciador_de_estoque
 {
-    internal class GeraID
+  
+    public class GeraID
     {
         private HashSet<int> usedIDs;
         private Random rand;

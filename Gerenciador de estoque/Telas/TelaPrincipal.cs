@@ -20,7 +20,8 @@ namespace Gerenciador_de_estoque
 
         private GeraID GeraID;   // Objeto que gera IDs únicos para os produtos e os armazena em uma lista
         private List<Categoria> Categorias;  // Objeto que armazena as categorias dos produtos
-        private Lista<Produto> Produtos; //Lista de todos os produtos cadastrados
+        private List<Produto> Produtos; //Lista de todos os produtos cadastrados
+       
 
 
         //Construtor
@@ -59,7 +60,7 @@ namespace Gerenciador_de_estoque
             {
                 currentChildForm.Close();
             }
-            currentChildForm = childform;//definir o formulário recebido como formulário atual
+            currentChildForm = childform;
             childform.TopLevel = false;
             childform.FormBorderStyle = FormBorderStyle.None;
             childform.Dock = DockStyle.Fill;
@@ -67,7 +68,7 @@ namespace Gerenciador_de_estoque
             panelDesktop.Tag = childform;
             childform.BringToFront();
             childform.Show();
-            childform.Anchor = AnchorStyles.None;
+
         }
 
         private void ActivateButton(object Sender, Color color)
@@ -160,6 +161,7 @@ namespace Gerenciador_de_estoque
 
         private void pictureBox1_Click(object sender, System.EventArgs e)
         {
+            currentChildForm.Close();
             Reset();
         }
 
@@ -220,7 +222,7 @@ namespace Gerenciador_de_estoque
             //labelDayOfWeek.Text = currentDateTime.DayOfWeek.ToString();
             timerDisplayHorario.Start();
 
-            Produtos = new Lista<Produto>();
+            Produtos = new List<Produto>();
             GeraID = new GeraID();
             Categorias = new List<Categoria>();
             try
@@ -261,6 +263,28 @@ namespace Gerenciador_de_estoque
         private void BtnAdicionar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void adicionarProdutoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActivateForm(new AdicionarProduto(Produtos, GeraID, Categorias));
+        }
+
+        private void panelDesktop_SizeChanged(object sender, EventArgs e)
+        {
+            if(currentChildForm != null)
+            currentChildForm.Size = panelDesktop.ClientSize;
+        }
+
+        private void TelaPrincipal_SizeChanged(object sender, EventArgs e)
+        {
+            if (currentChildForm != null)
+                currentChildForm.Size = panelDesktop.ClientSize;
+        }
+
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

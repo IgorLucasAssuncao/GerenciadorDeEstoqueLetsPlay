@@ -81,6 +81,7 @@ namespace Gerenciador_de_estoque
             this.registrarVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.históricoDeVendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarDívidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BtnSair = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -96,6 +97,7 @@ namespace Gerenciador_de_estoque
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(50)))));
+            this.panelMenu.Controls.Add(this.BtnSair);
             this.panelMenu.Controls.Add(this.Btn_Sobre);
             this.panelMenu.Controls.Add(this.Btn_Ajuda);
             this.panelMenu.Controls.Add(this.Btn_Financas);
@@ -105,7 +107,7 @@ namespace Gerenciador_de_estoque
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 697);
+            this.panelMenu.Size = new System.Drawing.Size(220, 587);
             this.panelMenu.TabIndex = 0;
             // 
             // Btn_Sobre
@@ -255,7 +257,7 @@ namespace Gerenciador_de_estoque
             this.panelTopo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTopo.Location = new System.Drawing.Point(220, 0);
             this.panelTopo.Name = "panelTopo";
-            this.panelTopo.Size = new System.Drawing.Size(757, 125);
+            this.panelTopo.Size = new System.Drawing.Size(696, 125);
             this.panelTopo.TabIndex = 0;
             this.panelTopo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTopo_MouseDown);
             // 
@@ -268,7 +270,7 @@ namespace Gerenciador_de_estoque
             this.BtnMinimize.IconColor = System.Drawing.Color.Gainsboro;
             this.BtnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnMinimize.IconSize = 23;
-            this.BtnMinimize.Location = new System.Drawing.Point(680, 5);
+            this.BtnMinimize.Location = new System.Drawing.Point(619, 5);
             this.BtnMinimize.Name = "BtnMinimize";
             this.BtnMinimize.Size = new System.Drawing.Size(20, 17);
             this.BtnMinimize.TabIndex = 4;
@@ -284,7 +286,7 @@ namespace Gerenciador_de_estoque
             this.BtnExpand.IconColor = System.Drawing.Color.Aqua;
             this.BtnExpand.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnExpand.IconSize = 23;
-            this.BtnExpand.Location = new System.Drawing.Point(706, 5);
+            this.BtnExpand.Location = new System.Drawing.Point(645, 5);
             this.BtnExpand.Name = "BtnExpand";
             this.BtnExpand.Size = new System.Drawing.Size(20, 17);
             this.BtnExpand.TabIndex = 3;
@@ -300,7 +302,7 @@ namespace Gerenciador_de_estoque
             this.BtnExit.IconColor = System.Drawing.Color.Red;
             this.BtnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnExit.IconSize = 28;
-            this.BtnExit.Location = new System.Drawing.Point(732, 5);
+            this.BtnExit.Location = new System.Drawing.Point(671, 5);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(20, 17);
             this.BtnExit.TabIndex = 2;
@@ -341,7 +343,7 @@ namespace Gerenciador_de_estoque
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Gerenciador_de_estoque.Properties.Resources.Imagem_do_WhatsApp_de_2023_11_17_à_s__17_42_59_1e3d94cd;
-            this.pictureBox2.Location = new System.Drawing.Point(149, 105);
+            this.pictureBox2.Location = new System.Drawing.Point(119, 50);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(447, 259);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -353,7 +355,7 @@ namespace Gerenciador_de_estoque
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.Controls.Add(this.labelTime);
             this.panel2.Controls.Add(this.labelDate);
-            this.panel2.Location = new System.Drawing.Point(214, 305);
+            this.panel2.Location = new System.Drawing.Point(184, 250);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(322, 119);
             this.panel2.TabIndex = 2;
@@ -382,7 +384,6 @@ namespace Gerenciador_de_estoque
             // 
             // panelDesktop
             // 
-            this.panelDesktop.AutoSize = true;
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(58)))));
             this.panelDesktop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDesktop.Controls.Add(this.panel2);
@@ -390,8 +391,9 @@ namespace Gerenciador_de_estoque
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 125);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(757, 572);
+            this.panelDesktop.Size = new System.Drawing.Size(696, 462);
             this.panelDesktop.TabIndex = 2;
+            this.panelDesktop.SizeChanged += new System.EventHandler(this.panelDesktop_SizeChanged);
             // 
             // testeToolStripMenuItem
             // 
@@ -481,6 +483,7 @@ namespace Gerenciador_de_estoque
             this.adicionarProdutoToolStripMenuItem.Name = "adicionarProdutoToolStripMenuItem";
             this.adicionarProdutoToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.adicionarProdutoToolStripMenuItem.Text = "Adicionar Produto";
+            this.adicionarProdutoToolStripMenuItem.Click += new System.EventHandler(this.adicionarProdutoToolStripMenuItem_Click);
             // 
             // atualizarProdutoToolStripMenuItem
             // 
@@ -587,22 +590,46 @@ namespace Gerenciador_de_estoque
             this.cadastrarDívidaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.cadastrarDívidaToolStripMenuItem.Text = "Cadastrar dívida";
             // 
+            // BtnSair
+            // 
+            this.BtnSair.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnSair.FlatAppearance.BorderSize = 0;
+            this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSair.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnSair.IconChar = FontAwesome.Sharp.IconChar.RightToBracket;
+            this.BtnSair.IconColor = System.Drawing.Color.White;
+            this.BtnSair.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnSair.IconSize = 40;
+            this.BtnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSair.Location = new System.Drawing.Point(0, 488);
+            this.BtnSair.Name = "BtnSair";
+            this.BtnSair.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnSair.Size = new System.Drawing.Size(220, 99);
+            this.BtnSair.TabIndex = 6;
+            this.BtnSair.Text = "Sair";
+            this.BtnSair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnSair.UseVisualStyleBackColor = true;
+            this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(977, 697);
+            this.ClientSize = new System.Drawing.Size(916, 587);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTopo);
             this.Controls.Add(this.panelMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.MinimumSize = new System.Drawing.Size(993, 736);
+            this.MinimumSize = new System.Drawing.Size(910, 612);
             this.Name = "TelaPrincipal";
             this.Text = "Gerenciador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TelaPrincipal_FormClosed);
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
+            this.SizeChanged += new System.EventHandler(this.TelaPrincipal_SizeChanged);
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -616,7 +643,6 @@ namespace Gerenciador_de_estoque
             this.dropDownMenu1.ResumeLayout(false);
             this.dropDownMenu2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -672,5 +698,6 @@ namespace Gerenciador_de_estoque
         private System.Windows.Forms.ToolStripMenuItem registrarVendaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem históricoDeVendasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarDívidaToolStripMenuItem;
+        private FontAwesome.Sharp.IconButton BtnSair;
     }
 }

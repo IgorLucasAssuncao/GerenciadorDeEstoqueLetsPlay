@@ -4,23 +4,31 @@ namespace Gerenciador_de_estoque
 {
     public class Categoria
     {
+        private String nome;
         public String Nome
         {
-            get { return Nome; }
+            get { return nome; }
             set
             {
                 if (value.Length > 32)
                     throw new Exception("Tamanho inválido");
+                else
+                    nome = value;
             }
         }
 
+        private String descricao;
         public String Descricao
         {
-            get { return Nome; }
+            get { return descricao; }
             set
             {
                 if (value.Length > 200)
                     throw new Exception("Tamanho inválido");
+                else
+                {
+                    descricao = value;
+                }
             }
         }
         public Categoria(string nome, string descricao)
